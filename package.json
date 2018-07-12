@@ -1,15 +1,21 @@
 {
-  "name": "node_electron",
+  "name": "test_node",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "publish": "electron-builder -p always",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "win": {}
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "electron": "^2.0.4"
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-builder": "^20.20.4"
   }
 }
