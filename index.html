@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App</title>
+</head>
+<body>
+  <div>Hello World</div>
+  <button id="button">Click Me</button>
+
+  <button id="main-msg">main-msg</button>
+  <button id="new-win">new Win</button>
+
+  <a href="https://blog.djkloop.cn" id="link">点击打开链接</a>
+  <script>
+    require('./renderer-process/open.js')
+    require('./renderer-process/menu.js')
+    require('./renderer-process/main-msg.js')
+    require('./renderer-process/new-win.js')
+    require('./renderer-process/notification.js')
+    require('./renderer-process/link.js')
+ </script>
+</body>
+</html>
