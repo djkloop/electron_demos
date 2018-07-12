@@ -19,7 +19,6 @@ var winLoad = function(e) {
     height: 100,
     show: false
   });
-  win.webContents.openDevTools();
   win.loadURL(path.join('file:', __dirname, '../new-win.html'));
 
   win.webContents.on('did-finish-load', e => {

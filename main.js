@@ -21,7 +21,6 @@ const createWindow = () => {
 
   console.log(URL);
   win.loadURL(URL);
-  win.webContents.openDevTools();
   // 关闭的时候把win置空
   win.on('close', () => {
     win = null;
